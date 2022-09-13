@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesap Makinesi Uygulaması"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Sayıları giriniz:"
+        android:textColor="#DD0A0A"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/sayi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="sayi1"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/sayi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="sayi2"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="İşlemi yapmak için seçiniz"
+        android:textColor="#CD2121"
+        android:textSize="17dp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="117dp">
+
+        <Button
+            android:id="@+id/cikar"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="210dp"
+            android:onClick="oncikarClick"
+            android:text="-"
+            android:textSize="24sp"
+            app:backgroundTint="#9F3232" />
+
+        <Button
+            android:id="@+id/topla"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:onClick="ontoplaClick"
+            android:text="+"
+            android:textSize="24sp"
+            app:backgroundTint="#9F3232" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bol"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="210dp"
+            android:onClick="onbolClick"
+            android:text="/"
+            android:textSize="24sp"
+            app:backgroundTint="#9F3232" />
+
+        <Button
+            android:id="@+id/carp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:onClick="oncarpClick"
+            android:text="x"
+            android:textSize="24sp"
+            app:backgroundTint="#9F3232" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="İşlemin sonucu"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+
+</LinearLayout>
